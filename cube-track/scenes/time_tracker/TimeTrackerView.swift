@@ -14,14 +14,21 @@ struct TimeTrackerView: View {
     var body: some View {
         
         VStack {
-            HStack {
+            VStack {
                 ForEach(vm.trackedTimes) {
                     Text($0.timeScore.durationFormat)
                 }
             }
+            .frame(width: 100)
+            .padding()
+            .border(Color.accentColor, width: 2.0)
 
             if vm.trackedSet == nil {
                 Text(vm.time.durationFormat)
+                    .font(.title)
+                    .frame(width: 200)
+                    .padding()
+                    .border(Color.accentColor, width: 5.0)
 
                 if vm.isTracking {
                     Button(action: vm.endTimer) {

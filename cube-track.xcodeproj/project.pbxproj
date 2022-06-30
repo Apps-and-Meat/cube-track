@@ -53,6 +53,7 @@
 		DF1386AE286CFB980021AE02 /* TimeTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackerViewModel.swift; sourceTree = "<group>"; };
 		DF1386B2286D092A0021AE02 /* TimeInterval++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval++.swift"; sourceTree = "<group>"; };
 		DF1386B4286DBCB40021AE02 /* TimeInterval++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval++.swift"; sourceTree = "<group>"; };
+		DF1386B6286DC9FB0021AE02 /* cube-track.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "cube-track.xctestplan"; path = "cube-track.xcodeproj/cube-track.xctestplan"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		DF13866E286CF76B0021AE02 = {
 			isa = PBXGroup;
 			children = (
+				DF1386B6286DC9FB0021AE02 /* cube-track.xctestplan */,
 				DF138679286CF76B0021AE02 /* cube-track */,
 				DF13868B286CF76D0021AE02 /* cube-trackTests */,
 				DF138695286CF76D0021AE02 /* cube-trackUITests */,
