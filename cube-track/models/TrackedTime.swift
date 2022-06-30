@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TrackedTime: Hashable, Identifiable {
+struct TrackedTime: Hashable, Identifiable, Codable {
     var id: Date { startDate }
     let startDate: Date
     let endDate: Date

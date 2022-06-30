@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var modalVM = ModalViewModel.shared
+
     var body: some View {
         TimeTrackerView()
             .frame(minWidth: 300, minHeight: 300)
+            .sheet(item: $modalVM.presentedModal) { presentedModal in
+                switch presentedModal {
+                case .history:
+                    HistoryView()
+                }
+            }
+    }
+}
+
+class ModalViewModel: ObservableObject {
+
+    static var shared = ModalViewModel()
+
+    @Published var presentedModal: PresentedModal?
+}
+
+enum PresentedModal: Identifiable {
+    case history
+
+    var id: String {
+        switch self {
+        case .history: return "history"
+        }
     }
 }
 

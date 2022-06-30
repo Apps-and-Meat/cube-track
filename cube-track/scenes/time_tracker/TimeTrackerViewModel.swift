@@ -24,6 +24,7 @@ class TimeTrackerViewModel: ObservableObject {
     @Published
     private var timer: Timer?
 
+    private var localDataStore = UserDefaultsLocalDataStore.shared
 
     init() {
         $startTime
@@ -85,11 +86,18 @@ class TimeTrackerViewModel: ObservableObject {
     }
 
     func saveResults() {
+        if let set = trackedSet {
+            localDataStore.saveTrackedSet(set)
+        }
         resetTracker()
     }
 
     func discardResults() {
         resetTracker()
+    }
+
+    func openHistory() {
+        ModalViewModel.shared.presentedModal = .history
     }
 
     private func resetTracker() {

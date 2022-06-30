@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TrackedSet: Hashable, Identifiable {
+struct TrackedSet: Hashable, Identifiable, Codable {
     var id: Date { startDate }
     let startDate: Date
 

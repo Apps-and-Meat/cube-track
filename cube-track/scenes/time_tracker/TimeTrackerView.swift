@@ -14,6 +14,14 @@ struct TimeTrackerView: View {
     var body: some View {
         
         VStack {
+
+            HStack {
+                Spacer()
+                Button("History", action: vm.openHistory)
+            }
+
+            Spacer()
+
             VStack {
                 ForEach(vm.trackedTimes) {
                     Text($0.timeScore.durationFormat)
@@ -50,7 +58,7 @@ struct TimeTrackerView: View {
                 }
             }
 
-        }
+        }.padding(.bottom)
     }
 }
 
