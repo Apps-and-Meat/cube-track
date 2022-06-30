@@ -11,14 +11,13 @@
 		DF13867D286CF76B0021AE02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13867C286CF76B0021AE02 /* ContentView.swift */; };
 		DF13867F286CF76C0021AE02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13867E286CF76C0021AE02 /* Assets.xcassets */; };
 		DF138683286CF76C0021AE02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF138682286CF76C0021AE02 /* Preview Assets.xcassets */; };
-		DF13868D286CF76D0021AE02 /* cube_trackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13868C286CF76D0021AE02 /* cube_trackTests.swift */; };
 		DF138697286CF76D0021AE02 /* cube_trackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF138696286CF76D0021AE02 /* cube_trackUITests.swift */; };
-		DF138699286CF76D0021AE02 /* cube_trackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF138698286CF76D0021AE02 /* cube_trackUITestsLaunchTests.swift */; };
 		DF1386A7286CF8DB0021AE02 /* TrackedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1386A6286CF8DB0021AE02 /* TrackedTime.swift */; };
 		DF1386A9286CF8EB0021AE02 /* TrackedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1386A8286CF8EB0021AE02 /* TrackedSet.swift */; };
 		DF1386AD286CFB8A0021AE02 /* TimeTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1386AC286CFB8A0021AE02 /* TimeTrackerView.swift */; };
 		DF1386AF286CFB980021AE02 /* TimeTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1386AE286CFB980021AE02 /* TimeTrackerViewModel.swift */; };
 		DF1386B3286D092A0021AE02 /* TimeInterval++.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1386B2286D092A0021AE02 /* TimeInterval++.swift */; };
+		DF1386B5286DBCB40021AE02 /* TimeInterval++.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1386B4286DBCB40021AE02 /* TimeInterval++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,15 +45,14 @@
 		DF138680286CF76C0021AE02 /* cube_track.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cube_track.entitlements; sourceTree = "<group>"; };
 		DF138682286CF76C0021AE02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF138688286CF76D0021AE02 /* cube-trackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cube-trackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF13868C286CF76D0021AE02 /* cube_trackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cube_trackTests.swift; sourceTree = "<group>"; };
 		DF138692286CF76D0021AE02 /* cube-trackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cube-trackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF138696286CF76D0021AE02 /* cube_trackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cube_trackUITests.swift; sourceTree = "<group>"; };
-		DF138698286CF76D0021AE02 /* cube_trackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cube_trackUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DF1386A6286CF8DB0021AE02 /* TrackedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedTime.swift; sourceTree = "<group>"; };
 		DF1386A8286CF8EB0021AE02 /* TrackedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedSet.swift; sourceTree = "<group>"; };
 		DF1386AC286CFB8A0021AE02 /* TimeTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackerView.swift; sourceTree = "<group>"; };
 		DF1386AE286CFB980021AE02 /* TimeTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackerViewModel.swift; sourceTree = "<group>"; };
 		DF1386B2286D092A0021AE02 /* TimeInterval++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval++.swift"; sourceTree = "<group>"; };
+		DF1386B4286DBCB40021AE02 /* TimeInterval++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,7 @@
 		DF13868B286CF76D0021AE02 /* cube-trackTests */ = {
 			isa = PBXGroup;
 			children = (
-				DF13868C286CF76D0021AE02 /* cube_trackTests.swift */,
+				DF1386B4286DBCB40021AE02 /* TimeInterval++.swift */,
 			);
 			path = "cube-trackTests";
 			sourceTree = "<group>";
@@ -137,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				DF138696286CF76D0021AE02 /* cube_trackUITests.swift */,
-				DF138698286CF76D0021AE02 /* cube_trackUITestsLaunchTests.swift */,
 			);
 			path = "cube-trackUITests";
 			sourceTree = "<group>";
@@ -328,7 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF13868D286CF76D0021AE02 /* cube_trackTests.swift in Sources */,
+				DF1386B5286DBCB40021AE02 /* TimeInterval++.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +334,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF138697286CF76D0021AE02 /* cube_trackUITests.swift in Sources */,
-				DF138699286CF76D0021AE02 /* cube_trackUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
