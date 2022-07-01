@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "shortcut-swiftui-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shortcut/shortcut-swiftui-ios",
+      "state" : {
+        "branch" : "fix/action-sheet-osx-unavailable",
+        "revision" : "c582a05aa81608eaacf2ae1f9d59c31cf2619428"
+      }
+    }
+  ],
+  "version" : 2
+}

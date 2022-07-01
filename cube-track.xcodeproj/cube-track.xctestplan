@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "C2374405-2D2B-49D1-B992-4B50E63358DF",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:cube-track.xcodeproj",
+      "identifier" : "DF138676286CF76B0021AE02",
+      "name" : "cube-track"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:cube-track.xcodeproj",
+        "identifier" : "DF138687286CF76D0021AE02",
+        "name" : "cube-trackTests"
+      }
+    }
+  ],
+  "version" : 1
+}
