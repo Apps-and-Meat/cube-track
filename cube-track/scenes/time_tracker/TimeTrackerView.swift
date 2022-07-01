@@ -15,11 +15,6 @@ struct TimeTrackerView: View {
         
         VStack {
 
-            HStack {
-                Spacer()
-                Button("History", action: vm.openHistory)
-            }
-
             Spacer()
 
             VStack {

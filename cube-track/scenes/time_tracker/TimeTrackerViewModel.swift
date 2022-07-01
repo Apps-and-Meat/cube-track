@@ -96,10 +96,6 @@ class TimeTrackerViewModel: ObservableObject {
         resetTracker()
     }
 
-    func openHistory() {
-        ModalViewModel.shared.presentedModal = .history
-    }
-
     private func resetTracker() {
         endTime = nil
         startTime = nil
