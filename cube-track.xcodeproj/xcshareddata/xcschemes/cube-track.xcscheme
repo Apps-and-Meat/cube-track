@@ -7,7 +7,7 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForTesting = "NO"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
@@ -17,20 +17,6 @@
                BlueprintIdentifier = "DF138676286CF76B0021AE02"
                BuildableName = "cube-track.app"
                BlueprintName = "cube-track"
-               ReferencedContainer = "container:cube-track.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DF138691286CF76D0021AE02"
-               BuildableName = "cube-trackUITests.xctest"
-               BlueprintName = "cube-trackUITests"
                ReferencedContainer = "container:cube-track.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
