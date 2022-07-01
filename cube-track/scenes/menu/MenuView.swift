@@ -13,13 +13,33 @@ struct MenuView: View {
         List {
 
             NavigationLink(destination: TimeTrackerView.init) {
-                Text("Tracker")
+                MenuButton(title: "Time tracker", systemImageName: "timer")
             }
 
+
             NavigationLink(destination: HistoryView.init) {
-                Text("History")
+                MenuButton(title: "History", systemImageName: "list.star")
             }
+
         }
+    }
+}
+
+private struct MenuButton: View {
+    let title: String
+    let systemImageName: String
+
+    var body: some View {
+        
+        HStack {
+
+            Image(systemName: systemImageName)
+
+            Text(title)
+        }
+        .padding(.vertical)
+        .font(.title)
+
     }
 }
 
