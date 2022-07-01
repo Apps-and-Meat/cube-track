@@ -11,14 +11,16 @@ struct ContentView: View {
     @StateObject var modalVM = ModalViewModel.shared
 
     var body: some View {
-        TimeTrackerView()
-            .frame(minWidth: 300, minHeight: 300)
-            .sheet(item: $modalVM.presentedModal) { presentedModal in
-                switch presentedModal {
-                case .history:
-                    HistoryView()
-                }
+
+        NavigationView {
+            MenuView()
+        }
+        .sheet(item: $modalVM.presentedModal) { presentedModal in
+            switch presentedModal {
+            case .history:
+                HistoryView()
             }
+        }
     }
 }
 
