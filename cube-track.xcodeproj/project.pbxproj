@@ -54,6 +54,7 @@
 		DF15C428286DE98D009926DA /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		DF15C42A286DF40D009926DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DF15C42F286F0367009926DA /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		DF15C431286F1EB1009926DA /* cube-trackDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "cube-trackDebug.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		DF138679286CF76B0021AE02 /* cube-track */ = {
 			isa = PBXGroup;
 			children = (
+				DF15C431286F1EB1009926DA /* cube-trackDebug.entitlements */,
 				DF15C42A286DF40D009926DA /* Info.plist */,
 				DF1386B0286D08F00021AE02 /* shared */,
 				DF1386AA286CFB3E0021AE02 /* scenes */,
@@ -450,12 +452,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = "cube-track/cube_track.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "cube-track/cube-trackDebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"cube-track/Preview Content\"";
 				DEVELOPMENT_TEAM = N856DL6EH7;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "cube-track/Info.plist";
