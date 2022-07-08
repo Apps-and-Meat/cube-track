@@ -16,3 +16,17 @@ struct TrackedTime: Hashable, Identifiable, Codable {
         endDate.timeIntervalSince(startDate)
     }
 }
+
+extension Array where Element == TrackedTime {
+
+    func isShortest(time: TrackedTime) -> Bool {
+        let durations = self.map { $0.timeScore }
+        return time.timeScore <= durations.shortest
+    }
+
+    func isLongest(time: TrackedTime) -> Bool {
+        let durations = self.map { $0.timeScore }
+        return time.timeScore >= durations.longest
+    }
+
+}

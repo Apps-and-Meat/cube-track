@@ -63,3 +63,32 @@ struct UserDefaultsLocalDataStore: LocalDataStore {
         self.sets.value = sets
     }
 }
+
+struct MyUserDefaultsStorage {
+
+    var favorites: CurrentValueSubject<[String: String], Never> = .init([:])
+
+    @AppStorage("stars")
+    private var favoritesData = Data()
+
+    private let decoder = JSONDecoder()
+    private let encoder = JSONEncoder()
+
+    private var cancellables = Set<AnyCancellable>()
+
+    init() {
+        do {
+            favorites.value = try decoder.decode([String: String].self, from: favoritesData)
+        } catch {
+            print("No saved data")
+        }
+
+        favorites
+            .receive(on: RunLoop.main)
+            .removeDuplicates()
+            .encode(encoder: encoder)
+            .replaceError(with: Data())
+            .assign(to: \.favoritesData, on: self)
+            .store(in: &cancellables)
+    }
+}

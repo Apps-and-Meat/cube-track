@@ -20,3 +20,34 @@ extension TimeInterval {
         return "\(minuteString):\(secondString):\(milisecondString)"
     }
 }
+
+extension Array where Element == TimeInterval {
+    var shortest: TimeInterval {
+        self.reduce(TimeInterval.infinity) { partialResult, element in
+            if element < partialResult {
+                return element
+            } else {
+                return partialResult
+            }
+        }
+    }
+
+    var longest: TimeInterval {
+        self.reduce(TimeInterval()) { partialResult, element in
+            if element > partialResult {
+                return element
+            } else {
+                return partialResult
+            }
+        }
+    }
+
+    func isShortest(time: TimeInterval) -> Bool {
+        time <= self.shortest
+    }
+
+    func isLongest(time: TimeInterval) -> Bool {
+        time >= self.longest
+    }
+
+}
