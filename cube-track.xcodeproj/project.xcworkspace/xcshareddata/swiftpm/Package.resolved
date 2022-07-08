@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "shortcut-foundation-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/shortcut/shortcut-foundation-ios",
+      "state" : {
+        "revision" : "6b3ba4ca3878aae91db09d86f06d41466592be0c",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "shortcut-swiftui-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/shortcut/shortcut-swiftui-ios",

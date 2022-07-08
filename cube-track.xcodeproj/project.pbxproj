@@ -22,6 +22,7 @@
 		DF15C429286DE98D009926DA /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF15C428286DE98D009926DA /* HistoryViewModel.swift */; };
 		DF15C42D286F0329009926DA /* ShortcutUI in Frameworks */ = {isa = PBXBuildFile; productRef = DF15C42C286F0329009926DA /* ShortcutUI */; };
 		DF15C430286F0367009926DA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF15C42F286F0367009926DA /* MenuView.swift */; };
+		DF96C3722878436300CC7909 /* ShortcutFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = DF96C3712878436300CC7909 /* ShortcutFoundation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF15C42D286F0329009926DA /* ShortcutUI in Frameworks */,
+				DF96C3722878436300CC7909 /* ShortcutFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +218,7 @@
 			name = "cube-track";
 			packageProductDependencies = (
 				DF15C42C286F0329009926DA /* ShortcutUI */,
+				DF96C3712878436300CC7909 /* ShortcutFoundation */,
 			);
 			productName = "cube-track";
 			productReference = DF138677286CF76B0021AE02 /* cube-track.app */;
@@ -269,6 +272,7 @@
 			mainGroup = DF13866E286CF76B0021AE02;
 			packageReferences = (
 				DF15C42B286F0329009926DA /* XCRemoteSwiftPackageReference "shortcut-swiftui-ios" */,
+				DF96C3702878436300CC7909 /* XCRemoteSwiftPackageReference "shortcut-foundation-ios" */,
 			);
 			productRefGroup = DF138678286CF76B0021AE02 /* Products */;
 			projectDirPath = "";
@@ -606,6 +610,14 @@
 				kind = branch;
 			};
 		};
+		DF96C3702878436300CC7909 /* XCRemoteSwiftPackageReference "shortcut-foundation-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shortcut/shortcut-foundation-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -613,6 +625,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DF15C42B286F0329009926DA /* XCRemoteSwiftPackageReference "shortcut-swiftui-ios" */;
 			productName = ShortcutUI;
+		};
+		DF96C3712878436300CC7909 /* ShortcutFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF96C3702878436300CC7909 /* XCRemoteSwiftPackageReference "shortcut-foundation-ios" */;
+			productName = ShortcutFoundation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

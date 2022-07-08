@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import ShortcutUI
+import ShortcutFoundation
 
 struct TimeTrackerView: View {
 
@@ -15,16 +17,26 @@ struct TimeTrackerView: View {
         
         VStack {
 
-            Spacer()
-
             VStack {
-                ForEach(vm.trackedTimes) {
-                    Text($0.timeScore.durationFormat)
+                ForEach(vm.trackedTimes.indexedArray(), id: \.index) { item in
+                    HStack {
+                        Text("Lap \(item.index)")
+                            .frame(maxWidth: 100, alignment: .leading)
+                        Text(item.element.timeScore.durationFormat)
+                            .foregroundColor(self.colorFor(time: item.element))
+                            .frame(maxWidth: 100, alignment: .trailing)
+                    }
                 }
             }
-            .frame(width: 100)
+
+            .font(.title2)
             .padding()
             .border(Color.accentColor, width: 2.0)
+            .padding(.horizontal)
+            .opacity(vm.trackedTimes.isEmpty ? 0 : 1)
+
+
+            Spacer()
 
             if vm.trackedSet == nil {
                 Text(vm.time.durationFormat)
@@ -55,6 +67,16 @@ struct TimeTrackerView: View {
             }
 
         }.padding(.bottom)
+    }
+
+    private func colorFor(time: TrackedTime) -> Color? {
+        if vm.trackedTimes.isShortest(time: time) {
+            return Color.green
+        } else if vm.trackedTimes.isLongest(time: time) {
+            return Color.red
+        } else {
+            return nil
+        }
     }
 
     private struct TouchButton: View {
