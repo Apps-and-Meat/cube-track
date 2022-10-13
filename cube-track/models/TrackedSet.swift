@@ -12,6 +12,7 @@ struct TrackedSet: Hashable, Identifiable, Codable {
     let startDate: Date
 
     let timeScores: [TrackedTime]
+    
 
     var totalTime: TimeInterval {
         timeScores.reduce(Double()) { partialResult, trackedtime in
